@@ -1,7 +1,7 @@
 {
   "name": "type-graphql-api",
   "version": "1.4.0",
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "license": "MIT",
   "dependencies": {
     "apollo-server": "^3.6.4",

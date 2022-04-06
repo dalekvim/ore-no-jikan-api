@@ -4,11 +4,10 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "dist",
+    "outDir": "./dist",
 
     "composite": true,
     "removeComments": true,
-    "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
@@ -21,6 +20,11 @@
 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true
-  }
+    "sourceMap": true,
+
+    "baseUrl": "."
+  },
+
+  "exclude": ["node_module"],
+  "include": ["./src/**/*.ts"]
 }

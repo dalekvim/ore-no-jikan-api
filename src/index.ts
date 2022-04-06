@@ -5,6 +5,9 @@ import http from "http";
 import "reflect-metadata";
 import { buildSchema } from "type-graphql";
 import { createConnection } from "typeorm";
+import { Anime } from "./entity/Anime";
+import { RecList } from "./entity/RecList";
+import { User } from "./entity/User";
 import { RecListResolver } from "./resolver/RecListResolver";
 import { UserResolver } from "./resolver/UserResolver";
 
@@ -16,7 +19,7 @@ import { UserResolver } from "./resolver/UserResolver";
     useUnifiedTopology: true,
     synchronize: true,
     logging: false,
-    entities: ["src/entity/**/*.ts"],
+    entities: [User, RecList, Anime],
     cli: {
       entitiesDir: "src/entity",
     },
